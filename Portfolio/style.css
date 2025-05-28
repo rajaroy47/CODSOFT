@@ -1,0 +1,623 @@
+/* Color Palette - Classic Red & Black */
+:root {
+  --dark-charcoal: #000000; /* Black */
+  --light-gray-text: #f0f0f0; /* Light gray/off-white */
+  --off-white-headings: #ffffff; /* White */
+  /* --indigo-accent: #e53935;  */
+
+  --indigo-accent: #ff1744; 
+
+  --darker-indigo-hover: #c62828; /* Darker red */
+  --light-border: #777777; /* Dark gray */
+  --navbar-dark: #1a1a1a; /* Slightly lighter black */
+  /* --brand-accent: #e53935; */
+
+  --brand-accent: #ff1744;  
+
+  /* --hero-gradient-start: #e53935; 
+  --hero-gradient-end: #ff5252; */
+
+  --hero-gradient-start: #ff1744; 
+  --hero-gradient-end: #ff1744;
+
+  --lead-paragraph: #9e9e9e; /* Medium gray */
+  --secondary-text: #757575; /* Darker gray */
+  --typewriter-cursor: #ff1744; /* Bright red */
+  --project-card-bg: #212121; /* Darker black */
+  --skill-item-bg: #424242; /* Dark gray */
+  --footer-text: #9e9e9e; /* Medium gray */
+}
+
+/* General Body Styles */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--dark-charcoal); /* Dark charcoal background */
+  color: var(--light-gray-text); /* Light gray text */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Particles.js Container */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; /* Ensure it's behind everything */
+  background-color: var(--dark-charcoal); /* Match body background */
+}
+
+/* Section Padding */
+section {
+  padding: 100px 0;
+  position: relative; /* Ensure content is above particles */
+  z-index: 1;
+}
+
+/* Container for content centering */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: var(--off-white-headings); /* Off-white for headings */
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--indigo-accent); /* Indigo accent color */
+  border-radius: 2px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--indigo-accent); /* Indigo primary button */
+  border-color: var(--indigo-accent);
+  border-radius: 0.75rem; /* More rounded buttons */
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  /* box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3); */
+  box-shadow: 0 4px 10px rgba(149, 149, 150, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--darker-indigo-hover); /* Darker indigo on hover */
+  border-color: var(--darker-indigo-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(195, 195, 199, 0.4);
+}
+
+.btn-outline-light {
+  border-color: var(--light-border);
+  color: var(--light-border);
+  border-radius: 0.75rem;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--light-border);
+  color: var(--dark-charcoal);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(203, 213, 224, 0.2);
+}
+
+/* Navbar */
+.navbar {
+  /* background-color: var(--navbar-dark) !important; */
+  background: transparent !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 1rem 0;
+  position: relative; /* Ensure navbar is above particles */
+  z-index: 2;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--brand-accent) !important; /* Brand name in accent color */
+  display: flex; /* Use flex to align logo and text */
+  align-items: center;
+}
+
+/* Removed profile-logo from navbar */
+/* .profile-logo {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+        border: 2px solid var(--brand-accent);
+    } */
+
+.nav-link {
+  color: var(--light-border) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin-left: 15px;
+}
+
+.nav-link:hover {
+  color: var(--brand-accent) !important;
+}
+
+/* Hero Section */
+#hero {
+  /* background: linear-gradient(
+    to right,
+    var(--dark-charcoal),
+    var(--navbar-dark)
+  ); */
+  background-image: url("./assets/typing.gif");
+  background-size: cover; /* Makes image cover the entire element */
+  background-repeat: no-repeat; /* Prevents image from repeating */
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px; /* Account for fixed navbar */
+  position: relative; /* Ensure hero content is above particles */
+  z-index: 1;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 👈 This is the black overlay */
+  z-index: -1;
+}
+
+.hero-profile-pic {
+  height: 150px; /* Larger size for hero section */
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+  border: 5px solid var(--brand-accent); /* Accent border */
+  box-shadow: 0 0 0 8px rgba(141, 141, 145, 0.3); /* Subtle glow effect */
+  transition: transform 0.3s ease;
+}
+
+.hero-profile-pic:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+#hero h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    45deg,
+    var(--hero-gradient-start),
+    var(--hero-gradient-end)
+  ); /* Gradient text for name */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#hero p.lead {
+  font-size: 1.5rem;
+  color: var(--lead-paragraph); /* Base color for the lead paragraph */
+  margin-bottom: 40px;
+  min-height: 2em; /* Ensure enough height for typing animation */
+}
+
+.small {
+  color: var(--secondary-text) !important;
+}
+
+#hero p.lead strong {
+  color: var(--off-white-headings); /* Bold white for "I'm a" */
+}
+
+/* Typewriter effect for hero text */
+.typewriter-text {
+  border-right: 0.15em solid var(--typewriter-cursor); /* Crimson cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  overflow: hidden; /* Hides the text until it's typed */
+  display: inline-block; /* Essential for animation */
+  vertical-align: bottom; /* Align cursor with text baseline */
+  font-weight: bold; /* Make the dynamic text bold */
+  color: var(--typewriter-cursor); /* Crimson color for the dynamic text */
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--typewriter-cursor);
+  } /* Crimson cursor */
+}
+
+/* About Section */
+#about {
+  background-color: var(--navbar-dark);
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: var(--light-border);
+  text-align: justify;
+}
+
+/* Projects Section */
+#projects {
+  background-color: var(--dark-charcoal);
+}
+
+.project-card {
+  background-color: var(--project-card-bg); /* Darker card background */
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  transition: all 0.3s ease-in-out;
+  height: 100%; /* Ensure cards have equal height */
+  display: flex;
+  flex-direction: column;
+  opacity: 0; /* Initial state for fade-in */
+  transform: translateY(20px); /* Initial state for slide-up */
+}
+
+.project-card.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--indigo-accent); /* Accent border on hover */
+}
+
+.project-card h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--off-white-headings);
+}
+
+.project-card p {
+  color: var(--light-border);
+  font-size: 1rem;
+  flex-grow: 1; /* Allow description to take available space */
+}
+
+.project-card .project-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start; /* Align links to the left */
+}
+
+.project-card .project-link {
+  color: var(--indigo-accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.project-card .project-link:hover {
+  color: var(--darker-indigo-hover);
+}
+
+.project-card .project-link i {
+  margin-left: 5px;
+}
+
+/* Skills Section */
+#skills {
+  background-color: var(--navbar-dark);
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Spacing between skill items */
+}
+
+.skill-item {
+  background-color: var(--skill-item-bg); /* Skill item background */
+  color: var(--off-white-headings);
+  padding: 12px 25px;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0; /* Initial state for fade-in */
+  transform: translateY(20px); /* Initial state for slide-up */
+  display: flex; /* Enable flex for icon and text alignment */
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-item.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-item:hover {
+  background-color: var(--indigo-accent); /* Accent color on hover */
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(151, 151, 153, 0.4);
+}
+
+.skill-item img {
+  height: 24px; /* Size of skill icons */
+  width: 24px;
+  margin-right: 10px; /* Space between icon and text */
+  filter: grayscale(100%) brightness(1.5); /* Make icons subtle and light */
+  transition: filter 0.3s ease;
+}
+
+.skill-item:hover img {
+  filter: grayscale(0%) brightness(1); /* Full color on hover */
+}
+
+/* Contact Section */
+#contact {
+  background-color: var(--dark-charcoal);
+  /* background-image: url('./assets/typing.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  text-align: center;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  color: var(--light-border);
+  margin-bottom: 40px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 2.5rem;
+  flex-wrap: wrap; /* Allow links to wrap on small screens */
+}
+
+.contact-links a {
+  color: var(--off-white-headings);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: var(--light-border); /* Accent color on hover */
+  transform: translateY(-5px);
+}
+
+.contact-links .btn {
+  /* Style for the new resume button */
+  font-size: 1rem; /* Adjust font size for button */
+  padding: 10px 20px; /* Adjust padding for button */
+  margin: 0 10px; /* Add margin around the button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  background-color: var(--navbar-dark);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 25px 0;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Scroll to Top Button */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--indigo-accent);
+  color: var(--off-white-headings);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.scroll-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+  background-color: var(--darker-indigo-hover);
+  transform: translateX(-3px);
+}
+
+/* Project Modal Styles */
+.project-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1001; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+  padding-top: 50px; /* Space from top */
+}
+
+.modal-content {
+  background-color: var(--project-card-bg);
+  margin: auto; /* Center vertically and horizontally */
+  padding: 30px;
+  border: 1px solid #475569;
+  width: 90%; /* Responsive width */
+  max-width: 800px; /* Max width for larger screens */
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: fadeInScale 0.3s ease-out; /* Simple entry animation */
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close-button {
+  color: var(--light-border);
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: var(--off-white-headings);
+  text-decoration: none;
+}
+
+.modal-content h3 {
+  color: var(--off-white-headings);
+  margin-bottom: 15px;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.modal-content p {
+  /* color: var(--light-border); */
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.modal-content .modal-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.modal-content .modal-links a {
+  color: var(--indigo-accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.modal-content .modal-links a:hover {
+  color: var(--darker-indigo-hover);
+}
+
+.modal-content .modal-screenshot {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Modal adjustments */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    margin: 10% auto;
+    padding: 20px;
+  }
+  .modal-content h3 {
+    font-size: 1.7rem;
+  }
+  .modal-content p {
+    font-size: 0.95rem;
+    /* color: white; */
+  }
+  .close-button {
+    font-size: 24px;
+    top: 10px;
+    right: 15px;
+  }
+}
+@media (max-width: 576px) {
+  #hero{
+    background-image: url("./assets/codeingbg.jpg");
+  }
+  .modal-content {
+    margin: 5% auto;
+    padding: 15px;
+  }
+  .modal-content h3 {
+    font-size: 1.5rem;
+  }
+  .modal-content p {
+    font-size: 0.9rem;
+  }
+  .modal-content .modal-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

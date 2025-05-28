@@ -1,148 +1,280 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <!-- Header Section -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raja Roy - Full-Stack Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
     <header>
-      <h1>Raja Roy</h1>
-      <p>
-        Enthusiastic Web Developer | Dedicated to Crafting Engaging and Dynamic
-        Web Applications
-      </p>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    Raja Roy
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <div class="container">
-      <section id="about">
-        <div class="h1-photo">
-          <div class="h11">
-            <h2>About Me</h2>
-          </div>
-
-          <div id="pro">
-            <img src="photo.jpg" alt="Your Name" />
-          </div>
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+            <img src="./assets/myimg.jpg" alt="Raja Roy Profile" class="hero-profile-pic">
+            <h1>Raja Roy</h1>
+            <p class="lead"><strong>I'm a </strong><span id="typewriter-text" class="typewriter-text"></span></p>
+            <a href="#projects" class="btn btn-primary me-3">View My Work</a>
+            <a href="#contact" class="btn btn-outline-light">Get in Touch</a>
         </div>
-        <div class="project">
-          <p>
-            Hello! I'm Raja Roy, a dedicated and enthusiastic web developer with
-            a passion for crafting seamless digital experiences. From a young
-            age, I've been fascinated by the endless possibilities of the
-            internet and how it connects people across the globe. This curiosity
-            led me to dive deep into the world of web development, where I found
-            my true.
-          </p>
-          <br />
-          <p>
-            My journey into web development began with a simple HTML and CSS
-            tutorial. What started as a hobby quickly grew into a full-fledged
-            passion. Over the years, I've honed my skills through countless
-            hours of practice, numerous projects, and continuous learning. Each
-            project has been a stepping stone, teaching me new techniques and
-            best practices.
-          </p>
-          <br />
-          <p>
-            I am excited to leverage my technical expertise and creativity to
-            contribute to innovative projects and help businesses achieve their
-            digital transformation goals. My diverse skill set allows me to
-            tackle challenges from multiple angles, ensuring efficient and
-            effective solutions. By combining a keen eye for design with robust
-            coding skills, I strive to create web experiences that are both
-            visually appealing and highly functional.
-          </p>
-        </div>
-      </section>
+    </section>
 
-      <!-- Skills Section -->
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>DBMS</li>
-          <li>Git & GitHub</li>
-        </ul>
-      </section>
-
-      <!-- Projects Section -->
-      <section id="my-projects">
-        <h2>Projects</h2>
-        <div class="wraper">
-          <div class="project">
-            <h3>Library Management System</h3>
-            <div>
-              <img src="lbms.png" alt="Library Management System" />
+    <section id="about">
+        <div class="container">
+            <h2 class="mb-4">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <p>Hello! I'm Raja Roy, a dedicated Full-Stack Developer with a strong foundation in building
+                        dynamic and responsive web applications. My expertise spans across both front-end and back-end
+                        technologies, allowing me to craft complete and robust solutions from concept to deployment.</p>
+                    <p>My journey in web development began with a curiosity for how digital experiences come to life,
+                        which quickly evolved into a passion for coding and problem-solving. I thrive on turning complex
+                        ideas into elegant, user-friendly interfaces and efficient, scalable server-side logic.</p>
+                    <p>I am proficient in a diverse range of technologies, including HTML, CSS, JavaScript, and modern
+                        frameworks like React for the front-end. On the back-end, I work with Node.js and PHP, coupled
+                        with databases like MySQL and SQL. My development workflow is streamlined by Git and Bash, and I
+                        leverage frameworks like Bootstrap and Tailwind CSS for rapid and responsive UI development.</p>
+                    <p>I'm constantly exploring new tools and methodologies to enhance my skills and stay at the
+                        forefront of web development trends. I'm always eager to collaborate on innovative projects and
+                        contribute to a team that values clean code, continuous learning, and impactful solutions.</p>
+                </div>
             </div>
-            <p>
-              This project involved creating a comprehensive library management
-              system using the MERN stack. It features user authentication, book
-              borrowing and returning functionalities,add to wishlist,like a
-              book and an intuitive admin dashboard for managing inventory.
-            </p>
-          </div>
-
-          <div class="project">
-            <h3>Calculator</h3>
-            <img src="calc.png" alt="calculator" />
-            <p>
-              Working on this calculator project allowed me to deepen my
-              understanding of JavaScript and enhance my problem-solving skills.
-              I tackled challenges such as efficient state management,
-              responsive design implementation, and error handling, all of which
-              contributed to my growth as a developer.
-            </p>
-          </div>
-
-          <div class="project">
-            <h3>Cel To Far Converter</h3>
-            <img src="cel-to-far.png" alt="cel-far converter" />
-            <p>
-              This project features a simple yet effective Celsius to Fahrenheit
-              converter built with HTML, CSS, and JavaScript. It demonstrates my
-              ability to create practical web tools that offer precise and
-              immediate conversions between temperature scales.
-            </p>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Resume Section -->
-      <section id="resume">
-        <h2>Resume</h2>
-        <p>
-          Explore my professional journey and discover the skills and
-          experiences that make me a proficient web developer. My resume
-          highlights my technical expertise, work experience, and educational
-          background, showcasing my commitment to continuous learning and
-          excellence in web development. Ready to learn more about my background
-          and accomplishments? Click the button below to download my resume.
-        </p>
-        <div class="btn">
-            <a href="raja-roy.pdf" download>Download My Resume</a>
+    <section id="projects">
+        <div class="container">
+            <h2 class="mb-5">My Projects</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="project-card" data-project-id="calculator">
+                        <h3>NexChat WebApp</h3>
+                        <p>A dynamic and responsive web-based chat application for real-time messaging, featuring robust
+                            authentication including email/password signup, verification, and password reset. Designed
+                            for seamless and intuitive user communication.</p>
+                        <p class="small">Technologies: HTML, CSS, BootStrap, JavaScript, Firebase Realtime Database</p>
+                        <div class="project-links mt-auto">
+                            <a href="#" class="project-link view-details-btn" data-project-id="calculator">
+                                View Details <i class="fas fa-info-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="project-card" data-project-id="landing-page">
+                        <h3>Modern Landing Page</h3>
+                        <p>A visually appealing and fully responsive landing page, crafted to showcase products/services
+                            with compelling design and engaging content sections.</p>
+                        <p class="small">Technologies: HTML, CSS, BootStrap</p>
+                        <div class="project-links mt-auto">
+                            <a href="#" class="project-link view-details-btn" data-project-id="landing-page">
+                                View Details <i class="fas fa-info-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="project-card" data-project-id="password-generator">
+                        <h3>Secure Password Generator</h3>
+                        <p>A robust web application designed to generate strong, customizable passwords based on
+                            user-defined criteria for enhanced security.</p>
+                        <p class="small">Technologies: HTML, CSS, BootStrap, JavaScript</p>
+                        <div class="project-links mt-auto">
+                            <a href="#" class="project-link view-details-btn" data-project-id="password-generator">
+                                View Details <i class="fas fa-info-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="project-card" data-project-id="todo-webapp">
+                        <h3>Interactive To-Do WebApp</h3>
+                        <p>A feature-rich to-do list application enabling users to manage tasks, set priorities, and
+                            track completion, built for productivity.</p>
+                        <p class="small">Technologies: HTML, CSS, JavaScript</p>
+                        <div class="project-links mt-auto">
+                            <a href="#" class="project-link view-details-btn" data-project-id="todo-webapp">
+                                View Details <i class="fas fa-info-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--
+                <div class="col">
+                    <div class="project-card" data-project-id="my-other-project">
+                        <h3>My Other Project</h3>
+                        <p>A brief description of another project you've worked on, highlighting its purpose and key features.</p>
+                        <p class="small">Technologies: React, Node.js, MongoDB</p>
+                        <div class="project-links mt-auto">
+                            <a href="#" class="project-link view-details-btn" data-project-id="my-other-project">
+                                View Details <i class="fas fa-info-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
         </div>
-        
-      </section>
+    </section>
 
-      <!-- Contact Section -->
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email:<a href="rajaroy6297818984@gmail.com">rajaroy6297818984@gmail.com</a></p>
-        <p>Phone: 8101744020</p>
-        <p>Linkedin: <a href="www.linkedin.com/in/rajaroy47">www.linkedin.com/in/rajaroy47</a></p>
-        <p>GitHub: <a href="https://github.com/rajaroy47">https://github.com/rajaroy47</a></p>
-      </section>
-    </div>
-    <footer>
-      <p>&copy; 2024 Raja Roy. All rights reserved.</p>
+    <section id="skills">
+        <div class="container">
+            <h2 class="mb-5">My Skills</h2>
+            <ul class="skill-list">
+                <li class="skill-item animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    HTML5
+                </li>
+                <li class="skill-item animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    CSS3
+                </li>
+                <li class="skill-item animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript"> JavaScript (ES6+)
+                </li>
+                <li class="skill-item animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="React.js"> React.js
+                </li>
+                <li class="skill-item animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js"> Node.js
+                </li>
+                <li class="skill-item animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"> PHP
+                </li>
+                <li class="skill-item animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    MySQL
+                </li>
+                <li class="skill-item animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                        alt="PostgreSQL"> PostgreSQL (SQL)
+                </li>
+                <li class="skill-item animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                        alt="C++"> C++
+                </li>
+                <li class="skill-item animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"> Git
+                </li>
+                <li class="skill-item animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+                        alt="Bash Scripting"> Bash Scripting
+                </li>
+                <li class="skill-item animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                    Linux
+                </li>
+                <li class="skill-item animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                        alt="Bootstrap 5"> Bootstrap 5
+                </li>
+                <li class="skill-item animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                        alt="Tailwind CSS" width="40" height="40"> Tailwind CSS
+                </li>
+
+
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="mb-4">Get in Touch</h2>
+            <p class="text-center mb-4">I'm always open to new opportunities, collaborations, or just a friendly chat.
+                Feel free to connect with me!</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/rajaroy47" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/rajaroy47" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="mailto:eduroket001@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="./assets/latest_raja_roy.pdf" class="btn btn-primary" download>
+                    <i class="fas fa-download me-2"></i>Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-center py-4">
+        <div class="container">
+            &copy; 2025 Raja Roy. All Rights Reserved.
+        </div>
     </footer>
-  </body>
+
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div id="projectModal" class="project-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modalProjectTitle"></h3>
+            <img id="modalProjectScreenshot" src="" alt="Project Screenshot" class="modal-screenshot"
+                style="display: none;">
+            <p id="modalProjectDescription"></p>
+            <p id="modalProjectTechnologies" class="text-muted small"></p>
+            <div class="modal-links">
+                <a id="modalProjectCodeLink" href="#" class="project-link" target="_blank">
+                    View Code <i class="fas fa-code"></i>
+                </a>
+                <a id="modalProjectDemoLink" href="#" class="project-link" target="_blank" style="display: none;">
+                    Live Demo <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
