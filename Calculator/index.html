@@ -3,41 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculaor</title>
+    <title>Amazing Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="calculator">
-        <input id="input-box" type="text" readonly placeholder="0">
-        <div class="same">
-            <button class="ac btn-color">AC</button>
-            <button class="dl btn-color">DEL</button>
-            <button>%</button>
-            <button>/</button>
+<body class="light-theme flex items-center justify-center min-h-screen p-4">
+    <div class="calculator-container w-full max-w-md mx-auto p-6 rounded-3xl transition-colors duration-300">
+        <div class="flex justify-end mb-4">
+            <button id="theme-toggle" class="btn-theme calculator-button text-sm px-4 py-2 rounded-full">
+                Toggle Theme
+            </button>
         </div>
-        <div class="same">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>*</button>
+
+        <div class="display rounded-xl p-6 mb-6 text-right overflow-hidden transition-colors duration-300">
+            <div id="history-display" class="history-display text-2xl h-8 mb-2 truncate"></div>
+            <div id="current-display" class="current-display text-5xl font-bold h-16 truncate">0</div>
         </div>
-        <div class="same">
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-        </div>
-        <div class="same">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>+</button>
-        </div>
-        <div class="same">
-            <button>00</button>
-            <button>0</button>
-            <button>.</button>
-            <button class="eql-btn">=</button>
+
+        <div class="button-grid">
+            <button class="calculator-button btn-operator" data-action="toggle-sign">+/-</button>
+            <button class="calculator-button btn-operator" data-action="sqrt">√</button>
+            <button class="calculator-button btn-operator" data-action="percentage">%</button>
+            <button class="calculator-button btn-operator" data-action="memory-clear">MC</button>
+
+            <button class="calculator-button btn-clear span-two" data-action="clear">AC</button>
+            <button class="calculator-button btn-delete" data-action="delete">DEL</button>
+            <button class="calculator-button btn-operator" data-action="divide">/</button>
+
+            <button class="calculator-button btn-number" data-value="7">7</button>
+            <button class="calculator-button btn-number" data-value="8">8</button>
+            <button class="calculator-button btn-number" data-value="9">9</button>
+            <button class="calculator-button btn-operator" data-action="multiply">*</button>
+
+            <button class="calculator-button btn-number" data-value="4">4</button>
+            <button class="calculator-button btn-number" data-value="5">5</button>
+            <button class="calculator-button btn-number" data-value="6">6</button>
+            <button class="calculator-button btn-operator" data-action="subtract">-</button>
+
+            <button class="calculator-button btn-number" data-value="1">1</button>
+            <button class="calculator-button btn-number" data-value="2">2</button>
+            <button class="calculator-button btn-number" data-value="3">3</button>
+            <button class="calculator-button btn-operator" data-action="add">+</button>
+
+            <button class="calculator-button btn-number span-two" data-value="0">0</button>
+            <button class="calculator-button btn-number" data-value=".">.</button>
+            <button class="calculator-button btn-equals" data-action="equals">=</button>
         </div>
     </div>
     <script src="script.js"></script>
