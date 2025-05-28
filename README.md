@@ -23,7 +23,7 @@ A stylish and functional calculator built using HTML, CSS, and JavaScript.
 - Clean and intuitive user interface
 - Responsive layout for desktop and mobile
 
-🔗 [Live Demo](#) | 💻 [Source Code](#)
+💻 [Source Code](https://github.com/rajaroy47/CODSOFT/tree/3013c1d97852af595809af6df016a1647cfb27e9/Calculator)
 
 ---
 
@@ -35,7 +35,7 @@ A professional portfolio website that can be used by developers, designers, or f
 - Sectioned layout (About, Skills, Projects, Contact)
 - Interactive navigation with smooth scrolling
 
-🔗 [Live Demo](#) | 💻 [Source Code](#)
+💻 [Source Code](https://github.com/rajaroy47/CODSOFT/tree/3013c1d97852af595809af6df016a1647cfb27e9/Portfolio)
 
 ---
 
@@ -47,7 +47,7 @@ A visually appealing and modern landing page designed for product or service pro
 - Well-structured content layout
 - Smooth animations and transitions
 
-🔗 [Live Demo](#) | 💻 [Source Code](#)
+💻 [Source Code](https://github.com/rajaroy47/CODSOFT/tree/3013c1d97852af595809af6df016a1647cfb27e9/landing-page)
 
 ---
 
@@ -55,7 +55,7 @@ A visually appealing and modern landing page designed for product or service pro
 
 - **HTML5** – Semantic and structured layout
 - **CSS3** – Responsive and attractive styling, Flexbox/Grid
-- **JavaScript (Vanilla)** – Interactive functionality
+- **JavaScript** – Interactive functionality
 - **Media Queries** – For responsive behavior across devices
 
 ---
@@ -78,9 +78,8 @@ This internship was an excellent opportunity to apply my web development skills 
 
 ## 📫 Connect with Me
 
-- **GitHub:** [your-username](https://github.com/your-username)
-- **LinkedIn:** [your-linkedin](https://linkedin.com/in/your-profile)
-- **Portfolio:** [your-portfolio](https://your-portfolio.com)
+- **LinkedIn:** [rajaroy47](https://linkedin.com/in/rajaroy47)
+- **Portfolio:** [my-portfolio](https://your-portfolio.com)
 
 ---
 
