@@ -1,204 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
-    <!--header-section start -->
-    <header id="header">
-      <nav class="nav-bar">
-        <div class="nav-img">
-          <a href="#header"><img src="./man1.jpg" alt="" /></a>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">FutureSphere</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="btn">
+                            <i class="fas fa-moon" id="theme-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="home nav-position nav-hover"><a href="#home">home</a></div>
-        <div class="about nav-position nav-hover"><a href="#about">about</a></div>
-        <div class="gallery nav-position nav-hover"><a href="#gal">gallery</a></div>
-        <div class="contact nav-position nav-hover"><a href="#con">contact</a></div>
-      </nav>
-      <div class="header-screen">
-        <div class="hamburger">
-          <i id="toggle-icon" class="fa-solid fa-bars-staggered"></i>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            <h1 class="display-1">The Future is Now.</h1>
+            <p class="lead">Step into a new dimension of innovation. We craft solutions that redefine possibilities and elevate experiences.</p>
+            <a href="#features" class="btn btn-primary btn-lg">Explore Our Solutions</a>
         </div>
-        <div class="header-image" id="imag">
-          
+    </section>
+
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Pioneering Innovations</h2>
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6 order-md-1">
+                    <div class="card p-4 h-100 d-flex flex-column justify-content-center">
+                        <div class="card-body text-center">
+                            <i class="fas fa-brain feature-icon mb-4"></i>
+                            <h5 class="card-title fw-bold fs-4 mb-3">Cognitive AI Systems</h5>
+                            <p class="card-text fs-6">Harness the power of advanced artificial intelligence for intelligent automation, predictive insights, and adaptive learning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-2">
+                    <img src="./assets/ai.jpg" alt="AI Feature" class="img-fluid rounded-4 shadow-lg about-image">
+                </div>
+
+                <div class="col-md-6 order-md-4">
+                    <div class="card p-4 h-100 d-flex flex-column justify-content-center">
+                        <div class="card-body text-center">
+                            <i class="fas fa-network-wired feature-icon mb-4"></i>
+                            <h5 class="card-title fw-bold fs-4 mb-3">Quantum-Secured Networks</h5>
+                            <p class="card-text fs-6">Experience unparalleled data security and ultra-low latency with our next-generation, quantum-resistant network infrastructure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-3">
+                    <img src="./assets/secure-net.jpg" alt="Network Feature" class="img-fluid rounded-4 shadow-lg about-image">
+                </div>
+
+                <div class="col-md-6 order-md-5">
+                    <div class="card p-4 h-100 d-flex flex-column justify-content-center">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cubes feature-icon mb-4"></i>
+                            <h5 class="card-title fw-bold fs-4 mb-3">Modular Blockchain Solutions</h5>
+                            <p class="card-text fs-6">Build transparent, immutable, and scalable applications with our customizable blockchain frameworks, designed for enterprise adoption.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-6">
+                    <img src="./assets/blockcahin.jpg" alt="Blockchain Feature" class="img-fluid rounded-4 shadow-lg about-image">
+                </div>
+            </div>
         </div>
-        <div class="header-text">
-          <h1>I am Raja <span class="span-text">Frontend Developer</span></h1>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Our Journey</h2>
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="./assets/team2.jpg" alt="About Us Image" class="img-fluid rounded-4 shadow-lg about-image">
+                </div>
+                <div class="col-md-6">
+                    <p class="lead">FutureSphere was founded on the belief that technology should serve humanity, pushing the boundaries of what's possible to create a better tomorrow. Our journey began with a small team of visionaries, united by a passion for innovation and a commitment to excellence.</p>
+                    <p>Today, we are a global collective of brilliant minds, constantly exploring new frontiers in AI, quantum computing, and decentralized systems. We pride ourselves on our collaborative spirit, ethical approach, and unwavering dedication to delivering transformative solutions that drive progress across industries.</p>
+                    <ul class="list-unstyled mt-4 fs-5">
+                        <li><i class="fas fa-check-circle text-primary me-3"></i> Pioneering research and development</li>
+                        <li><i class="fas fa-check-circle text-primary me-3"></i> Global talent network and partnerships</li>
+                        <li><i class="fas fa-check-circle text-primary me-3"></i> Commitment to ethical AI and sustainability</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </header>
+    </section>
 
-    <!-- header-section end -->
-
-
-    <!-- home-section start -->
-    <div class="home-content same" id="home">
-      <div class="home-box h1">
-        <h1>My Name</h1>
-        <div class="home-p p-content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit mollitia aliquid, dignissimos, quibusdam iusto dolorem
-            esse delectus quam numquam tempora saepe corrupti accusantium sint
-            nostrum recusandae officia quo explicabo dolor. Ullam libero quam
-            perspiciatis recusandae dignissimos ex distinctio facere voluptate
-            praesentium, quisquam qui placeat quis, optio ut laudantium vel?
-            Cupiditate animi unde iusto fuga blanditiis, sunt repudiandae
-            eligendi nihil perferendis.
-          </p>
+    <section class="py-5 text-center" style="background: linear-gradient(90deg, var(--light-primary), var(--light-gradient-end)); transition: background 0.5s ease-in-out;">
+        <div class="container">
+            <h2 class="text-white mb-4 fw-bold">Ready to Shape Your Future?</h2>
+            <p class="lead text-white-75 mb-5">Join forces with FutureSphere and transform your ideas into reality. Let's build something extraordinary together.</p>
+            <a href="#contact" class="btn btn-light btn-lg px-5 py-3 fw-bold rounded-pill shadow-lg">Get in Touch Today</a>
         </div>
-        <div class="skills p-content">
-          <h1>Skills</h1>
+    </section>
 
-          <div class="html skl"></div>
-          <h3>HTML</h3>
-          <div class="css skl"></div>
-          <h3>CSS</h3>
-          <div class="js skl"></div>
-          <h3>JAVASCRIPT</h3>
-          <div class="bs skl"></div>
-          <h3>BOOTSTRAP</h3>
+    <section id="contact" class="py-5 contact-section">
+        <div class="container">
+            <h2 class="text-center section-title">Connect With Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card p-5">
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="raja@example.com" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="form-label">Subject of Inquiry</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Project Inquiry, Support, etc." required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message" rows="6" placeholder="Tell us about your needs..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- home-section end -->
-
-
-    <!-- about-section start -->
-    <div class="about-content same" id="about">
-      <div class="about-section h1">
-        <h1>Hello There</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. At numquam
-          minima quibusdam mollitia officia, rem quia enim, doloribus, autem quae
-          nulla aut inventore expedita amet hic similique! Debitis, voluptatibus
-          voluptatem. Minus exercitationem unde cum possimus quo hic aliquam
-          laborum nesciunt! Iure laborum modi quos voluptates eligendi, quae animi
-          officiis deserunt amet dolore dolor maiores eius exercitationem, quas
-          quo praesentium tempore! Debitis, deleniti. Qui cupiditate voluptate
-          libero esse, fugiat praesentium veniam veritatis eaque repellendus. 
-        </p>
-
-        <div class="achivement">
-          <div class="awards common">
-            <h2>10</h2>
-            <p>Awards Received</p>
-          </div>
-          <div class="coffe common">
-            <h2>50</h2>
-            <p>Cups of Coffe</p>
-          </div>
-          <div class="projects common">
-            <h2>7</h2>
-            <p>Projects Completed</p>
-          </div>
-          <div class="clients common">
-            <h2>5</h2>
-            <p>Happy Clients</p>
-          </div>
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-3">&copy; 2025 FutureSphere. All rights reserved.</p>
+            <div class="social-icons mt-3">
+                <a href="#" class="mx-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="mx-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="mx-3"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="mx-3"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
-      </div>
-      
-    </div>
-    <!-- about-section end -->
+    </footer>
 
-    <!-- gallery start -->
-    <div class="gallery-content same" id="gal">
-      <div class="gallery-section h1">
-        <h1>Photo Gallery</h1>
-        <div class="gall-box">
-          <div class="gall-img img-same" id="img1">
-             
-          </div>
-          <div class="gall-img img-same" id="img2">
-            
-          </div>
-          <div class="gall-img img-same" id="img3">
-            
-          </div>
-          <div class="gall-img img-same" id="img4">
-            
-          </div>
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
-        <div class="gall-box2">
-          <div class="gall-img img-same" id="img5">
-             
-          </div>
-          <div class="gall-img img-same" id="img6">
-            
-          </div>
-          <div class="gall-img img-same" id="img7">
-            
-          </div>
-          <div class="gall-img img-same" id="img8">
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- gallery end -->
-
-    <!-- contact satrt -->
-    <div class="contact-content same" id="con">
-      <div class="contact2 h1">
-        <h1>Contact</h1>
-        <!-- contact form start -->
-        <div class="form">
-          <input type="text" placeholder="NAME" />
-          <input type="email" placeholder="EMAIL" />
-          <input type="text" placeholder="SUBJECT" />
-          <input type="text" placeholder="MASSAGE" />
-          <button>Send Massage</button>
-        </div>
-        <!-- form end -->
-
-        <!-- footer start -->
-        <div class="footer-icon">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-whatsapp"></i>
-          <i class="fa-brands fa-linkedin"></i>
-        </div>
-        <!-- footer end -->
-
-      </div>
-    </div>
-    <!-- contact end code end -->
-
-    <script>
-      let button = document.getElementById('toggle-icon');
-      let slider = document.querySelector('.nav-bar');
-
-
-      let toggle = 1;
-
-      button.addEventListener('click', function(){
-        if (toggle == 1){
-          slider.style.transform = "translateX(0%)";
-          button.classList.remove('fa-bars-staggered');
-      	  button.classList.add('fa-xmark');
-          toggle = 0;
-        }else{
-          slider.style.transform = "translateX(-100%)";
-          button.classList.remove('fa-xmark');
-      	  button.classList.add('fa-bars-staggered');
-          toggle = 1;
-        }
-      })
-    </script>
-
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
